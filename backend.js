@@ -71,7 +71,7 @@ async function updateTip() {
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const prompt =
-      "Genera un consejo breve e inspirador para el día sobre el cuidado de alimentacion y el ejercicio. Máximo 160 caracteres.";
+      "Genera un consejo breve e inspirador para el día sobre el cuidado de alimentacion y el ejercicio. Máximo 40 caracteres.";
 
     const result = await model.generateContent(prompt);
     const newTip = result.response.text().trim();
