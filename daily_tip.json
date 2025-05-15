@@ -1,1 +1,85 @@
-{"tip":"Abraza el aprendizaje continuo.  Cada reto es una oportunidad para crecer.  Tu éxito se construye paso a paso. ¡Avanza con valentía!","lastUpdated":"2025-04-26T00:01:56.850Z"}
+{
+  "tip": [
+    {
+      "categoria": "Nutrición",
+      "consejo": "Come más frutas y verduras."
+    },
+    {
+      "categoria": "Nutrición",
+      "consejo": "Bebe abundante agua."
+    },
+    {
+      "categoria": "Nutrición",
+      "consejo": "Reduce el consumo de azúcares procesados."
+    },
+    {
+      "categoria": "Nutrición",
+      "consejo": "Elige proteínas magras."
+    },
+    {
+      "categoria": "Nutrición",
+      "consejo": "Lee las etiquetas de los alimentos."
+    },
+    {
+      "categoria": "Ejercicio",
+      "consejo": "Camina 30 minutos al día."
+    },
+    {
+      "categoria": "Ejercicio",
+      "consejo": "Sube las escaleras en lugar de usar el ascensor."
+    },
+    {
+      "categoria": "Ejercicio",
+      "consejo": "Encuentra una actividad física que disfrutes."
+    },
+    {
+      "categoria": "Ejercicio",
+      "consejo": "Haz estiramientos regularmente."
+    },
+    {
+      "categoria": "Ejercicio",
+      "consejo": "No te esfuerces demasiado al principio."
+    },
+    {
+      "categoria": "Salud Mental",
+      "consejo": "Duerme 7-8 horas diarias."
+    },
+    {
+      "categoria": "Salud Mental",
+      "consejo": "Practica la meditación o la respiración profunda."
+    },
+    {
+      "categoria": "Salud Mental",
+      "consejo": "Conéctate con amigos y familiares."
+    },
+    {
+      "categoria": "Salud Mental",
+      "consejo": "Establece límites saludables."
+    },
+    {
+      "categoria": "Salud Mental",
+      "consejo": "Busca ayuda profesional si lo necesitas."
+    },
+    {
+      "categoria": "Bienestar",
+      "consejo": "Dedica tiempo a tus hobbies."
+    },
+    {
+      "categoria": "Bienestar",
+      "consejo": "Pasa tiempo en la naturaleza."
+    },
+    {
+      "categoria": "Bienestar",
+      "consejo": "Practica la gratitud."
+    },
+    {
+      "categoria": "Bienestar",
+      "consejo": "Lee un libro."
+    },
+    {
+      "categoria": "Bienestar",
+      "consejo": "Toma un baño relajante."
+    }
+  ],
+  "lastUpdated": "2025-05-15T19:21:36.838Z"
+}

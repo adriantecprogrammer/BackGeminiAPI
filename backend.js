@@ -71,7 +71,7 @@ async function updateTip() {
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const prompt =
-      "Genera un consejo breve e inspirador para el día sobre el cuidado de alimentacion y el ejercicio. Máximo 40 caracteres.";
+      "Genera una lista de consejos relacionada con los siguinetes temas: nutricion, ejercicio, salud mental y bienestar. Los consejos deben ser breves y fáciles de entender, la lista debe devolverse con la siguiente estructura: categoria y consejo en un json ejemplo: {categoria: 'nutricion', consejo: 'come frutas y verduras todos los dias'}";
 
     const result = await model.generateContent(prompt);
     const newTip = result.response.text().trim();
