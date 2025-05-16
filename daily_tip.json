@@ -2,15 +2,15 @@
   "tip": [
     {
       "categoria": "Nutrición",
-      "consejo": "Come más frutas y verduras."
+      "consejo": "Come frutas y verduras todos los días."
     },
     {
       "categoria": "Nutrición",
-      "consejo": "Bebe abundante agua."
+      "consejo": "Bebe suficiente agua."
     },
     {
       "categoria": "Nutrición",
-      "consejo": "Reduce el consumo de azúcares procesados."
+      "consejo": "Limita el consumo de azúcares procesados."
     },
     {
       "categoria": "Nutrición",
@@ -18,7 +18,7 @@
     },
     {
       "categoria": "Nutrición",
-      "consejo": "Lee las etiquetas de los alimentos."
+      "consejo": "Prioriza alimentos integrales."
     },
     {
       "categoria": "Ejercicio",
@@ -26,39 +26,39 @@
     },
     {
       "categoria": "Ejercicio",
-      "consejo": "Sube las escaleras en lugar de usar el ascensor."
+      "consejo": "Busca una actividad física que disfrutes."
     },
     {
       "categoria": "Ejercicio",
-      "consejo": "Encuentra una actividad física que disfrutes."
+      "consejo": "Incluye entrenamiento de fuerza en tu rutina."
     },
     {
       "categoria": "Ejercicio",
-      "consejo": "Haz estiramientos regularmente."
+      "consejo": "Escucha a tu cuerpo y descansa cuando lo necesites."
     },
     {
       "categoria": "Ejercicio",
-      "consejo": "No te esfuerces demasiado al principio."
+      "consejo": "Sube las escaleras en vez de usar el ascensor."
     },
     {
-      "categoria": "Salud Mental",
-      "consejo": "Duerme 7-8 horas diarias."
-    },
-    {
-      "categoria": "Salud Mental",
+      "categoria": "Salud mental",
       "consejo": "Practica la meditación o la respiración profunda."
     },
     {
-      "categoria": "Salud Mental",
-      "consejo": "Conéctate con amigos y familiares."
+      "categoria": "Salud mental",
+      "consejo": "Duerme 7-9 horas por noche."
     },
     {
-      "categoria": "Salud Mental",
+      "categoria": "Salud mental",
+      "consejo": "Conéctate con la naturaleza."
+    },
+    {
+      "categoria": "Salud mental",
+      "consejo": "Habla con alguien de confianza sobre tus preocupaciones."
+    },
+    {
+      "categoria": "Salud mental",
       "consejo": "Establece límites saludables."
-    },
-    {
-      "categoria": "Salud Mental",
-      "consejo": "Busca ayuda profesional si lo necesitas."
     },
     {
       "categoria": "Bienestar",
@@ -66,20 +66,19 @@
     },
     {
       "categoria": "Bienestar",
-      "consejo": "Pasa tiempo en la naturaleza."
-    },
-    {
-      "categoria": "Bienestar",
       "consejo": "Practica la gratitud."
     },
     {
       "categoria": "Bienestar",
-      "consejo": "Lee un libro."
+      "consejo": "Pasa tiempo con seres queridos."
     },
     {
       "categoria": "Bienestar",
-      "consejo": "Toma un baño relajante."
+      "consejo": "Desconéctate de las pantallas regularmente."
+    },
+    {
+      "categoria": "Bienestar",
+      "consejo": "Establece metas realistas y celebra tus logros."
     }
-  ],
-  "lastUpdated": "2025-05-15T19:21:36.838Z"
+  ]
 }
