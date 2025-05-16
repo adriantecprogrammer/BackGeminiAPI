@@ -71,7 +71,90 @@ async function updateTip() {
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const prompt =
-      "Genera una lista de consejos relacionada con los siguinetes temas: nutricion, ejercicio, salud mental y bienestar. Los consejos deben ser breves y fáciles de entender, la lista debe devolverse con la siguiente estructura: categoria y consejo en un json ejemplo: {categoria: 'nutricion', consejo: 'come frutas y verduras todos los dias'}";
+      "Genera una lista de consejos relacionada con los siguinetes temas: nutricion, ejercicio, salud mental y bienestar. Los consejos deben ser breves y fáciles de entender, la lista debe devolverse con la siguiente estructura: categoria y consejo en un json ejemplo: {
+  "tip": [
+    {
+      "categoria": "Nutrición",
+      "consejo": "Come frutas y verduras todos los días."
+    },
+    {
+      "categoria": "Nutrición",
+      "consejo": "Bebe suficiente agua."
+    },
+    {
+      "categoria": "Nutrición",
+      "consejo": "Limita el consumo de azúcares procesados."
+    },
+    {
+      "categoria": "Nutrición",
+      "consejo": "Elige proteínas magras."
+    },
+    {
+      "categoria": "Nutrición",
+      "consejo": "Prioriza alimentos integrales."
+    },
+    {
+      "categoria": "Ejercicio",
+      "consejo": "Camina 30 minutos al día."
+    },
+    {
+      "categoria": "Ejercicio",
+      "consejo": "Busca una actividad física que disfrutes."
+    },
+    {
+      "categoria": "Ejercicio",
+      "consejo": "Incluye entrenamiento de fuerza en tu rutina."
+    },
+    {
+      "categoria": "Ejercicio",
+      "consejo": "Escucha a tu cuerpo y descansa cuando lo necesites."
+    },
+    {
+      "categoria": "Ejercicio",
+      "consejo": "Sube las escaleras en vez de usar el ascensor."
+    },
+    {
+      "categoria": "Salud mental",
+      "consejo": "Practica la meditación o la respiración profunda."
+    },
+    {
+      "categoria": "Salud mental",
+      "consejo": "Duerme 7-9 horas por noche."
+    },
+    {
+      "categoria": "Salud mental",
+      "consejo": "Conéctate con la naturaleza."
+    },
+    {
+      "categoria": "Salud mental",
+      "consejo": "Habla con alguien de confianza sobre tus preocupaciones."
+    },
+    {
+      "categoria": "Salud mental",
+      "consejo": "Establece límites saludables."
+    },
+    {
+      "categoria": "Bienestar",
+      "consejo": "Dedica tiempo a tus hobbies."
+    },
+    {
+      "categoria": "Bienestar",
+      "consejo": "Practica la gratitud."
+    },
+    {
+      "categoria": "Bienestar",
+      "consejo": "Pasa tiempo con seres queridos."
+    },
+    {
+      "categoria": "Bienestar",
+      "consejo": "Desconéctate de las pantallas regularmente."
+    },
+    {
+      "categoria": "Bienestar",
+      "consejo": "Establece metas realistas y celebra tus logros."
+    }
+  ]
+}";
 
     const result = await model.generateContent(prompt);
     const newTip = result.response.text().trim();
