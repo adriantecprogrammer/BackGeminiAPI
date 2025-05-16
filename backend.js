@@ -51,7 +51,7 @@ function readTipFile() {
 }
 
 function saveTipFile(data) {
-  fs.writeFileSync(TIP_FILE, JSON.stringify(data));
+  fs.writeFileSync(TIP_FILE, JSON.stringify(data, null, 2));
 }
 
 function shouldUpdate(lastUpdated) {
@@ -70,59 +70,58 @@ function shouldUpdate(lastUpdated) {
 async function updateTip() {
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-    const prompt = `Genera una lista de consejos relacionada con los siguientes temas: nutrición, ejercicio, salud mental y bienestar. Los consejos deben ser breves y fáciles de entender. La lista debe devolverse con la siguiente estructura en formato JSON:
+    const prompt = `Genera EXCLUSIVAMENTE un JSON válido (sin comentarios, sin marcas \`\`\`json) con una lista de consejos sobre: nutrición, ejercicio, salud mental y bienestar. 
 
+Requisitos:
+1. Estructura exacta:
 {
   "tip": [
-    {
-      "categoria": "Nutrición",
-      "consejo": "Ejemplo de consejo breve"
-    },
-    {
-      "categoria": "Ejercicio",
-      "consejo": "Ejemplo de consejo breve"
-    }
+    {"categoria": "Nutrición", "consejo": "texto"},
+    {"categoria": "Ejercicio", "consejo": "texto"}
   ],
-  "lastUpdated": "fecha en formato ISO"
+  "lastUpdated": "fecha_ISO_actual"
 }
 
-Incluye al menos 5 consejos por categoría y añade automáticamente la fecha actual como lastUpdated.`;
+2. Consejos deben ser breves y prácticos
+3. 5 consejos por categoría
+4. NO incluyas ningún texto fuera del JSON
+5. NO uses markdown o bloques de código
+6. El JSON debe ser perfectamente válido y parseable`;
 
     const result = await model.generateContent(prompt);
     const response = await result.response;
-    const text = response.text();
+    let text = response.text();
 
-    // Intentar parsear el JSON devuelto
+    // Limpieza adicional por si acaso
+    text = text.replace(/^```json|```$/g, "").trim();
+
     try {
       const tipsData = JSON.parse(text);
 
-      // Verificar que la respuesta tenga la estructura esperada
       if (!tipsData.tip || !Array.isArray(tipsData.tip)) {
-        throw new Error("La respuesta no tiene la estructura esperada");
+        throw new Error("La respuesta no contiene un array 'tip' válido");
       }
 
-      // Asegurar que lastUpdated esté presente
       const newData = {
         tip: tipsData.tip,
-        lastUpdated: tipsData.lastUpdated || new Date().toISOString(),
+        lastUpdated: new Date().toISOString(),
       };
 
-      // Guardar los datos (asumiendo que saveTipFile está definido en otro lugar)
-      await saveTipFile(newData);
+      saveTipFile(newData);
       return newData;
     } catch (e) {
-      console.error("Error al procesar la respuesta:", e);
-      throw new Error(
-        "La respuesta no es un JSON válido o no tiene el formato correcto"
-      );
+      console.error("Error al parsear JSON:", {
+        error: e.message,
+        responseText: text,
+      });
+      throw new Error("La IA devolvió un formato inválido");
     }
   } catch (error) {
-    console.error("Error al generar consejos:", error);
+    console.error("Error en updateTip:", error);
     throw error;
   }
 }
 
-// Iniciar servidor
 app.listen(port, () => {
   console.log(`Servidor listo en http://localhost:${port}`);
 });

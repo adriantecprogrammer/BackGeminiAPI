@@ -2,23 +2,23 @@
   "tip": [
     {
       "categoria": "Nutrición",
-      "consejo": "Come frutas y verduras todos los días."
+      "consejo": "Bebe al menos 2 litros de agua al día."
     },
     {
       "categoria": "Nutrición",
-      "consejo": "Bebe suficiente agua."
+      "consejo": "Consume frutas y verduras de colores variados."
     },
     {
       "categoria": "Nutrición",
-      "consejo": "Limita el consumo de azúcares procesados."
+      "consejo": "Prioriza proteínas magras en tus comidas."
     },
     {
       "categoria": "Nutrición",
-      "consejo": "Elige proteínas magras."
+      "consejo": "Reduce el consumo de azúcares refinados."
     },
     {
       "categoria": "Nutrición",
-      "consejo": "Prioriza alimentos integrales."
+      "consejo": "Lee las etiquetas de los alimentos para controlar las porciones."
     },
     {
       "categoria": "Ejercicio",
@@ -26,11 +26,11 @@
     },
     {
       "categoria": "Ejercicio",
-      "consejo": "Busca una actividad física que disfrutes."
+      "consejo": "Incorpora ejercicios de fuerza dos veces por semana."
     },
     {
       "categoria": "Ejercicio",
-      "consejo": "Incluye entrenamiento de fuerza en tu rutina."
+      "consejo": "Busca actividades físicas que disfrutes."
     },
     {
       "categoria": "Ejercicio",
@@ -38,7 +38,7 @@
     },
     {
       "categoria": "Ejercicio",
-      "consejo": "Sube las escaleras en vez de usar el ascensor."
+      "consejo": "Establece metas realistas y progresivas."
     },
     {
       "categoria": "Salud mental",
@@ -46,7 +46,7 @@
     },
     {
       "categoria": "Salud mental",
-      "consejo": "Duerme 7-9 horas por noche."
+      "consejo": "Duerme 7-8 horas diarias."
     },
     {
       "categoria": "Salud mental",
@@ -54,11 +54,11 @@
     },
     {
       "categoria": "Salud mental",
-      "consejo": "Habla con alguien de confianza sobre tus preocupaciones."
+      "consejo": "Cultiva relaciones positivas."
     },
     {
       "categoria": "Salud mental",
-      "consejo": "Establece límites saludables."
+      "consejo": "Aprende a decir que no."
     },
     {
       "categoria": "Bienestar",
@@ -70,15 +70,16 @@
     },
     {
       "categoria": "Bienestar",
-      "consejo": "Pasa tiempo con seres queridos."
+      "consejo": "Aprende algo nuevo cada día."
     },
     {
       "categoria": "Bienestar",
-      "consejo": "Desconéctate de las pantallas regularmente."
+      "consejo": "Limita el tiempo frente a pantallas."
     },
     {
       "categoria": "Bienestar",
-      "consejo": "Establece metas realistas y celebra tus logros."
+      "consejo": "Prioriza el descanso y la relajación."
     }
-  ]
+  ],
+  "lastUpdated": "2025-05-16T05:14:19.888Z"
 }
