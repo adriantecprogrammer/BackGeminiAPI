@@ -83,7 +83,7 @@ Requisitos:
 }
 
 2. Consejos deben ser breves y prácticos
-3. 5 consejos por categoría
+3. 3 consejos por categoría
 4. NO incluyas ningún texto fuera del JSON
 5. NO uses markdown o bloques de código
 6. El JSON debe ser perfectamente válido y parseable`;
